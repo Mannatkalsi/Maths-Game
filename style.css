@@ -1,3 +1,4 @@
+
 html{
     height: 100%;
     background: radial-gradient(circle,#fff,#ccc);
@@ -6,7 +7,15 @@ html{
     background: -o-radial-gradient(circle,#fff,#ccc);
     background: -moz-radial-gradient(circle,#fff,#ccc);
     background-image: url(images.jpeg);
+    font: Sans-serif, Serif;
 }
+/* Header Section */
+#header{
+    flex: 50%;
+    min-width: 400px;
+    text-align: center;
+    
+} 
 /* Game Section */
 #container{
     height: 400px;

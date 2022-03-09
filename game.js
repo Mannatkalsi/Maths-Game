@@ -29,6 +29,8 @@ document.getElementById("startReset").onclick = function () {
         document.getElementById("timerValue").innerHTML = timer;//show time
 
         hide("gameOver"); //hide game over box/section
+        
+        document.getElementById("instruction").innerHTML = " Click on the Correct Answer!";
 
         document.getElementById("startReset").innerHTML = "Reset Game"; // change button to reset
 
@@ -56,9 +58,9 @@ for (i = 1; i < 5; i++) {
                 show("correct");
                 setTimeout(function(){
                     hide("correct");
-                }, 1000);
+                }, 2000);
                 
-                generateQA();
+                generateQA();//generate new question
             }
             else {
                 //wrong answer
@@ -66,7 +68,8 @@ for (i = 1; i < 5; i++) {
                 show("wrong");
                 setTimeout(function(){
                     hide("wrong");
-                }, 1000);
+                }, 2000);
+                //generateQA();//generate new question
             }
         }
     }
@@ -87,7 +90,7 @@ function startCountdown() {
             hide("correct"); // hide correct answer section
             hide("wrong"); //hide wrong answer section
             playing = false; // change mode to not playing
-            document.getElementById("startReset").innerHTML = "Start Game";
+            //document.getElementById("startReset").innerHTML = "Start Game";
 
         }
 
