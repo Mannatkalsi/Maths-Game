@@ -1,6 +1,11 @@
 html{
     height: 100%;
     background: radial-gradient(circle,#fff,#ccc);
+    background: -webkit-radial-gradient(circle,#fff,#ccc);
+    background: -ms-radial-gradient(circle,#fff,#ccc);
+    background: -o-radial-gradient(circle,#fff,#ccc);
+    background: -moz-radial-gradient(circle,#fff,#ccc);
+    background-image: url(images.jpeg);
 }
 /* Game Section */
 #container{
@@ -14,7 +19,6 @@ html{
     -moz-box-shadow: 0px 4px 0px 0px #009de4;
     -webkit-box-shadow: 0px 4px 0px 0px #009de4;
     /*        box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]*/
-
     position: relative;
 }
 /* Score Section */
@@ -31,7 +35,7 @@ html{
 /* Answer Section */
 #correct{
     position: absolute;
-    left: 260px;
+    left: 230px;
     background-color: #42e252;
     color: white;
     padding: 11px;
@@ -39,11 +43,11 @@ html{
 }
 #wrong{
     position: absolute;
-    left: 250px;
+    left: 200px;
     background-color: #de401a;
     color: white;
     padding: 11px;
-    display: none; 
+    display: none;
 }
 /* Question Section */
 #question{
@@ -98,13 +102,15 @@ html{
     -ms-transition: all 0.2s;
 }
 .box:hover, #startReset:hover{
-    background-color: #9C89F6;
+    /*background-color: #9C89F6;
     color: white;
     box-shadow: 0px 4px #6b54d3;
     -webkit-box-shadow: 0px 4px #6b54d3;
-    -moz-box-shadow: 0px 4px #6b54d3;
+    -moz-box-shadow: 0px 4px #6b54d3;*/
 }
 .box:active, #startReset:active{
+    background-color: #9C89F6;
+    color: white;
     box-shadow: 0px 0px #6b54d3;
     -webkit-box-shadow: 0px 0px #6b54d3;
     -moz-box-shadow: 0px 0px #6b54d3;
@@ -135,11 +141,11 @@ html{
 }
 /* Timer Section */
 #timer{
-    width: 152px;
+    width: 159px;
     padding: 10px;
     position: absolute;
     top: 395px;
-    left: 400px;
+    left: 395px;
     background-color: rgba(181, 235, 36, 0.8);
     border-radius: 3px;
     box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
@@ -153,6 +159,9 @@ html{
     height: 200px;
     width: 500px;
     background: linear-gradient(#F3CA6B, #F3706C);
+    background: -webkit-linear-gradient(#F3CA6B, #F3706C);
+    background: -o-linear-gradient(#F3CA6B, #F3706C);
+    background: -moz-linear-gradient(#F3CA6B, #F3706C);
     color: white;
     font-size: 2.5em;
     text-align: center;

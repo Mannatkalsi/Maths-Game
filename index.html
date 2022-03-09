@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Maths Game</title>
-        <meta charset="utf-8">
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1,user-scalable=yes">
-        <link rel="stylesheet" href="style.css">
-    
-    </head>
-    <body>
-        <!--Connecting JavaScript file with HTMLfile
-        <script type="text/javascript" src="game.js"></script>-->
-        
-        <!--Game Section-->
-        <div id="container">
-            <!--Score Section-->
-            <div id="score">
-                Score:<span id="scoreValue">0</span>
-            </div>
-            <!--Answer Section-->
-            <div id="correct">
-                Correct
-            </div>
-            <div id="wrong">
-                Wrong
-            </div>
-            <!--Question Section-->
-            <div id="question">
-                
-            </div>
-            <!--Instruction Section-->
-            <div id="instruction">
-                Click on the Correct Answer
-            </div>
-            <!--Choice Section-->
-            <div id="choices">
-                <div id="box1" class="box">10</div>
-                <div id="box2" class="box"></div>
-                <div id="box3" class="box"></div>
-                <div id="box4" class="box"></div>
-            </div>
-            <!--Start/Reset Button Section-->
-            <div id="startReset">
-                Start Game
-            </div>
-            <!--Timer Section-->
-            <div id="timer">
-                Time Remaining: <span id="timeValue">60</span>
-            </div>
-            <div id="gameOver">
-                <p>Game Over</p>
-                <p>You score is 20</p>
-            </div>
+
+<head>
+    <title>Maths Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!--Game Section-->
+    <div id="container">
+        <!--Score Section-->
+        <div id="score">
+            Score:<span id="scoreValue">0</span>
         </div>
-    </body>
+        <!--Answer Section-->
+        <div id="correct">
+            Correct Answer
+        </div>
+        <div id="wrong">
+            Wrong Answer! Try Again
+        </div>
+        <!--Question Section-->
+        <div id="question">
+
+        </div>
+        <!--Instruction Section-->
+        <div id="instruction">
+            Click on the Correct Answer
+        </div>
+        <!--Choice Section-->
+        <div id="choices">
+            <div id="box1" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box3" class="box"></div>
+            <div id="box4" class="box"></div>
+        </div>
+        <!--Start/Reset Button Section-->
+        <div id="startReset">
+            Start Game
+        </div>
+        <!--Timer Section-->
+        <div id="timer">
+            Time Remaining: <span id="timerValue">60</span> sec
+        </div>
+        <div id="gameOver">
+            
+        </div>
+    </div>
+    
+    <!--Connecting JavaScript file with HTMLfile-->
+        <script src="game.js"></script>
+</body>
 
 </html>
